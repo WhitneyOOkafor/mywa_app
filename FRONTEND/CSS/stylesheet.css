@@ -1,4 +1,28 @@
 /* & RESETTING STYLES*/
+button,
+input,
+optgroup,
+select,
+textarea,html input[type="button"],
+input[type="reset"],
+input[type="submit"],button[disabled],
+html input[disabled],button::-moz-focus-inner,
+input::-moz-focus-inner, input[type="checkbox"],
+input[type="radio"], input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button, input[type="search"], input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration{
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+input:focus-visible, input::selection{
+    border-radius: 0;
+    outline: #0E1921;
+}
 *{
     margin: 0;
     padding: 0;
@@ -7,12 +31,19 @@
     /* 62.5% of 16px browser font size is 10px */
     font-size: 62.5%;
 }
-
+a, a:focus{
+    color: #0E1921;
+}
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    width: 100vw;
+}
 /*& UNIVERSAL STYLES*/
 .container{
     padding: 14.103vw 13.59vw 14.103vw 13.59vw;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     box-sizing: border-box;
 }
 .totalCenter{
@@ -25,6 +56,189 @@
     width: fit-content;
     height: fit-content;
 }
+
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@font-face {
+    font-family: 'Space-Grotesk-Bold';
+    src: url('./FONTS/SpaceGrotesk-Bold.eot');
+    src: local('Space Grotesk Bold'), local('SpaceGrotesk-Bold'),
+        url('./FONTS/SpaceGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./FONTS/SpaceGrotesk-Bold.woff2') format('woff2'),
+        url('./FONTS/SpaceGrotesk-Bold.woff') format('woff'),
+        url('./FONTS/SpaceGrotesk-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space-Grotesk-Light';
+    src: url('./FONTS/SpaceGrotesk-Light.eot');
+    src: local('Space Grotesk Light'), local('SpaceGrotesk-Light'),
+        url('./FONTS/SpaceGrotesk-Light.eot?#iefix') format('embedded-opentype'),
+        url('./FONTS/SpaceGrotesk-Light.woff2') format('woff2'),
+        url('./FONTS/SpaceGrotesk-Light.woff') format('woff'),
+        url('./FONTS/SpaceGrotesk-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space-Grotesk-Medium';
+    src: url('./FONTS/SpaceGrotesk-Medium.eot');
+    src: local('Space Grotesk Medium'), local('SpaceGrotesk-Medium'),
+        url('./FONTS/SpaceGrotesk-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./FONTS/SpaceGrotesk-Medium.woff2') format('woff2'),
+        url('./FONTS/SpaceGrotesk-Medium.woff') format('woff'),
+        url('./FONTS/SpaceGrotesk-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space-Grotesk-SemiBold';
+    src: url('./FONTS/SpaceGrotesk-SemiBold.eot');
+    src: local('Space Grotesk SemiBold'), local('SpaceGrotesk-SemiBold'),
+        url('./FONTS/SpaceGrotesk-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('./FONTS/SpaceGrotesk-SemiBold.woff2') format('woff2'),
+        url('./FONTS/SpaceGrotesk-SemiBold.woff') format('woff'),
+        url('./FONTS/SpaceGrotesk-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space-Grotesk-Regular';
+    src: url('./FONTS/SpaceGrotesk-Regular.eot');
+    src: local('Space Grotesk Regular'), local('SpaceGrotesk-Regular'),
+        url('./FONTS/SpaceGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./FONTS/SpaceGrotesk-Regular.woff2') format('woff2'),
+        url('./FONTS/SpaceGrotesk-Regular.woff') format('woff'),
+        url('./FONTS/SpaceGrotesk-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*h1 = size:104px letterspacing:-1.5px*/
+h1{
+    font-family: 'Space-Grotesk-Light';
+    font-size: 26.667vw;
+    letter-spacing: -0.385vw;
+}
+/*h2 = size:65px letterspacing:-0.5px*/
+h2{
+    font-family: 'Space-Grotesk-Light';
+    font-size: 16.667vw;
+    letter-spacing: -0.128vw;
+}
+/*h3 = size:52px letterspacing:0px*/
+h3{
+    font-family: 'Space-Grotesk-Regular';
+    font-size: 13.333vw;
+    letter-spacing: 0;
+}
+/*h4 = size:37px letterspacing:0.25px*/
+h4{
+    font-family: 'Space-Grotesk-Regular';
+    font-size: 9.487vw;
+    letter-spacing: 0.064vw;
+}
+/*h5 = size:26px letterspacing:0px*/
+h5{
+    font-family: 'Space-Grotesk-Regular';
+    font-size: 6.667vw;
+    letter-spacing: 0;
+}
+/*h6 = size:22px letterspacing:0.15px*/
+h6{
+    font-family: 'Space-Grotesk-Medium';
+    font-size: 5.641vw;
+    letter-spacing: 0.038vw;
+}
+/*subtitle 1= size:17px letterspacing:0.15px*/
+.subtitle-1{
+    font-family: 'Space-Grotesk-Regular';
+    font-size: 4.359vw;
+    letter-spacing: 0.038;
+}
+/*subtitle 2= size:15px letterspacing:0.1px*/
+.subtitle-2{
+    font-family: 'Space-Grotesk-Medium';
+    font-size: 3.846vw;
+    letter-spacing: 0.026vw;
+}
+/*body 1= size:17px letterspacing:0.5px*/
+.body-1{
+    font-family: 'Space-Grotesk-Regular';
+    font-size: 4.359vw;
+    letter-spacing: 0.128vw;
+}
+/*body 2 = size:15px letterspacing:0.25px*/
+.body-2{
+    font-family: 'Space-Grotesk-Regular';
+    font-size: 3.846vw;
+    letter-spacing: 0.064vw;
+}
+/*button = size:15px letterspacing:1.25px*/
+.btn-txt{
+    font-family: 'Space-Grotesk-Medium';
+    font-size: 3.846vw;
+    letter-spacing: 0.321vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*captiion = size:13px letterspacing:0.4px*/
+.caption{
+    font-size: 3.333vw;
+    letter-spacing: 0.103vw;
+    font-family: 'Space-Grotesk-Regular';
+}
+
+/*overline = size:11px letterspacing:1.5px*/
+.overline{
+    font-size: 2.821vw;
+    letter-spacing: 0.385vw;
+    font-family: 'Space-Grotesk-Regular';
+}
+
+/*& FORMS*/
+label{
+    font-family: 'Space-Grotesk-Bold' !important;
+}
+input{
+    width: 71.795vw; /*280px*/
+    height: 12.821vw; /*50px*/
+    border: 0.513vw #0E1921 solid; /*2px*/
+    padding: 3.333vw 5.129; /*13px 20px*/
+    text-align: center;
+}
+.inputFieldContainer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12.821vw; /*50px*/
+}
+#loginForm{
+    margin-bottom: 33.077vw; /*129px*/
+}
+
+/*& BUTTONS*/
+.btn-1{
+    width: 32.564vw;/*127px*/
+    height: 12.308vw;/*48px*/
+    background-color: #F0BC1B;
+    border: 0.513vw #0E1921 solid; /*2px*/
+    padding: 3.077vw 6.41vw;/*12px by 25px*/
+}
+button:hover{
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.75);
+
+}
+
 /*& SPLASHSCREEN*/
 
 #splashScreenLogo{
@@ -43,6 +257,8 @@
 
 
 /*& ANIMATIONS*/
+
+/*^ This animation makes the logo in the splashcreen pulse*/
 @keyframes splashscreenLogo {
     0%{
         transform: scale(1) rotate(-15deg);
@@ -53,4 +269,41 @@
     100%{
         transform: scale(1) rotate(-15deg);
     }
+}
+@keyframes indexLogo {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.15);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/*& INDEX PAGE*/
+.indexPage .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.indexPage .logo{
+    animation-name: indexLogo;
+    animation-duration: 1.0s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    justify-self:first baseline;
+    margin-bottom: 12.821vw; /*50px*/
+}
+.loginButtons{
+    display: flex;
+    justify-content: space-between;
+}
+.indexPage a{
+    align-self: flex-start;
 }
