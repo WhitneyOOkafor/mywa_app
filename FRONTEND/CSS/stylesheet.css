@@ -234,9 +234,12 @@ input{
     border: 0.513vw #0E1921 solid; /*2px*/
     padding: 3.077vw 6.41vw;/*12px by 25px*/
 }
-button:hover{
+.btn:hover{
     box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.75);
 
+}
+.btn{
+    box-sizing: border-box;
 }
 
 /*& SPLASHSCREEN*/
