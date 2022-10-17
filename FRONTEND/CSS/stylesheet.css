@@ -347,7 +347,7 @@ label{
 .signupPage .inputFieldContainer{
     margin-bottom: 5.13vw !important;/*20px*/
 }
-.signupButtons{
+.next-prev-btns{
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -433,9 +433,44 @@ i img{
 .list-item{
     color: #F0BC1B;
 }
-.IDVerificationPage .signupButtons{
+.IDVerificationPage .next-prev-btns{
     justify-content: flex-end;
 }
 .IDVerificationPage h4{
     
+}
+.camera{
+    height: 196.67vw;/*767*/
+    border: 0.513vw #0E1921 solid;
+        /*2px*/
+        border-bottom: none;
+}
+.IDVerificationPage-camera .container{
+    padding:0;
+    height: 100%;
+
+}
+.btm-bar{
+    height: 19.74vw;/*77px*/
+    background-color: #E3E0D7;
+    border: 0.513vw #0E1921 solid;/*2px*/
+    display: flex;
+    justify-content: center;
+}
+.btm-bar .next-prev-btns{
+    justify-content: space-between;
+    margin-top: 0;
+    position: relative;
+    bottom: 10.26vw;/*24px*/
+    width: 71.79vw;/*280px*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.btm-bar #next-btn, .btm-bar #prev-btn{
+background-color: #fff;
+}
+.btn-3{
+    border-radius: 100%;
 }
