@@ -335,8 +335,9 @@ label{
     margin-bottom: 2.56vw;/*10px*/
 }
 .heading{
-    margin-top: 6.41vw;/*25px*/
+    /* margin-top: 6.41vw;25px */
     margin-bottom: 5.1vw;/*20px*/
+    text-align: center;
 }
 
 .signupPage .inputFieldContainer{
@@ -360,6 +361,43 @@ i img{
 }
 .signupPage-1 i{
     position: absolute;
-    top:104.61vw;/*408px*/
+    top:98.1vw;/*408px*/
     right: 17.95vw;/*70px*/
+}
+
+/*& SIGNUP PAGE 3*/
+.social-btns{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.social-btn{
+    width: 71.795vw; /*280px*/
+    height: 12.821vw; /*50px*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 0.513vw #0E1921 solid; /*2px*/
+
+}
+.social-btn-1{
+    background-color: #F0BC1B;
+}
+.social-btn-2{
+    background-color: #F18D21;
+}
+.social-btn-3{
+    background-color: #A51E24;
+    color: #fff;
+}
+.social-btn-4{
+    background-color: #183059;
+    color: #fff;
+}
+.social-btn-margin-btm{
+    margin-bottom: 5.13vw;/*20px*/
+}
+.social-btn:hover{
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.75);
 }
