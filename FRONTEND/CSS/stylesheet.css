@@ -210,7 +210,7 @@ h6{
 label{
     font-family: 'Space-Grotesk-Bold' !important;
 }
-input{
+.input{
     width: 71.795vw; /*280px*/
     height: 12.821vw; /*50px*/
     border: 0.513vw #0E1921 solid; /*2px*/
@@ -241,7 +241,19 @@ input{
 .btn{
     box-sizing: border-box;
 }
-
+.btn-2{
+    width: 12.31vw;/*48px*/
+    height: 12.31vw;/*48px*/
+    border: 0.513vw #0E1921 solid; /*2px*/
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-2 img{
+    width: 7.44vw;/*29px*/
+    height: 3.85vw;/*15*/
+}
 /*& SPLASHSCREEN*/
 
 #splashScreenLogo{
@@ -309,4 +321,29 @@ input{
 }
 .indexPage a{
     align-self: flex-start;
+}
+
+
+/*& SIGNUP PAGE*/
+.link{
+    color: #A51E24;
+}
+.heading h3{ 
+    text-align: center;
+    margin-bottom: 2.56vw;/*10px*/
+}
+.heading{
+    margin-top: 6.41vw;/*25px*/
+    margin-bottom: 5.1vw;/*20px*/
+}
+
+.signupPage .inputFieldContainer{
+    margin-bottom: 5.13vw !important;/*20px*/
+}
+.signupButtons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 12.82vw;
+
 }

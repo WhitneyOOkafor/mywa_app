@@ -1,8 +1,57 @@
+<!DOCTYPE html>
 <html>
     <head>
-
+        <title>MyWa App | Safely. Reliably. Together.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/stylesheet.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../JS/navigation.js"></script>
     </head>
-    <body>
-        
+    <body class="signupPage">
+        <div class="container">
+            <div class="heading">
+                <h3>Welcome To MYWA</h3>
+                <p class="body-2">Already have an account? <a class="link body-2">Login</a></p>
+            </div>
+
+            <div class="signupForm">
+                <form action="">
+                    <div class="inputFieldContainer">
+                        <label class="body-1">Name</label>
+                        <input class="input input-1 body-2" id="Name" type="text">
+                    </div>
+                    <div class="inputFieldContainer">
+                        <label class="body-1">Surname</label>
+                        <input class="input input-1 body-2" id="Surname" type="text">
+                    </div>
+                    <!--TODO datepicker-->
+                    <div class="inputFieldContainer">
+                        <label class="body-1">Birth date</label>
+                        <div class=" input body-2 date-picker input-1">
+    
+                        </div>
+    
+                    </div>
+                    <div class="inputFieldContainer">
+                        <label class="body-1">Email</label>
+                        <input class="input input-1 body-2" id="email" type="email">
+                    </div>
+                    <div class="inputFieldContainer">
+                        <label class="body-1">Phone number</label>
+                        <input class="input input-1 body-2" id="Phone-number" type="number">
+                    </div>
+                    <!--! these buttons should have a fixed space between them. They do not change with the size of the text-->
+                    <div class="signupButtons">
+                        <div onclick="" id="next-btn" class="btn btn-2 btn-txt">
+                            <img src="../ASSETS/prev-arrow.svg"/>
+                        </div>
+                        <div onclick="" id="prev-btn" class="btn btn-2 login-btn btn-txt">
+                            <img src="../ASSETS/next-arrow.svg"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </body>
 </html>
