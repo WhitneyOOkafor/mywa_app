@@ -30,6 +30,7 @@ input:focus-visible, input::selection{
     text-decoration: none;
     /* 62.5% of 16px browser font size is 10px */
     font-size: 62.5%;
+    box-sizing: border-box;
 }
 a, a:focus{
     color: #0E1921;
@@ -209,6 +210,7 @@ h6{
 /*& FORMS*/
 label{
     font-family: 'Space-Grotesk-Bold' !important;
+    padding-bottom: 2.56vw;/*10px*/
 }
 .input{
     width: 71.795vw; /*280px*/
@@ -346,4 +348,18 @@ label{
     width: 100%;
     margin-top: 12.82vw;
 
+}
+i{
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+}
+i img{
+    height: 6.53vw;/*25.47*/
+    width: 8.77vw;/*34.19px*/
+}
+.signupPage-1 i{
+    position: absolute;
+    top:104.61vw;/*408px*/
+    right: 17.95vw;/*70px*/
 }
