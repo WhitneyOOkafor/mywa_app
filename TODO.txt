@@ -18,3 +18,8 @@ SIGNUP PAGE 3
     -next button: navigate to signup page 4
     -Social buttons: take user to social media
                     when social button is clicked change color
+
+SIGNUP PAGE 4
+    -prev button: navigate back to signup page 3
+    -next button: navigate to ID verification 1
+    -link: pop up with information on how to proceed

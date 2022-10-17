@@ -401,3 +401,22 @@ i img{
 .social-btn:hover{
     box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.75);
 }
+
+/*&SIGNUP 4*/
+.ver-code{
+    border: 0.513vw #0E1921 solid; /*2px*/
+    height: 12.82vw;/*50px*/
+    width: 12.82vw;/*50px*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 5.64vw;/*22px*/
+}
+.signupPage-4 form{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5.13vw;/*20px*/
+}
