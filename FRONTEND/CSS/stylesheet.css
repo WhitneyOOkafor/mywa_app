@@ -334,6 +334,10 @@ label{
     text-align: center;
     margin-bottom: 2.56vw;/*10px*/
 }
+.heading h4{ 
+    text-align: center;
+    margin-bottom: 2.56vw;/*10px*/
+}
 .heading{
     /* margin-top: 6.41vw;25px */
     margin-bottom: 5.1vw;/*20px*/
@@ -419,4 +423,19 @@ i img{
     display: flex;
     flex-direction: row;
     margin-bottom: 5.13vw;/*20px*/
+}
+/*&-------------------------------------------------------*/
+
+/*^ID VERIFICATION*/
+
+/*&-------------------------------------------------------*/
+
+.list-item{
+    color: #F0BC1B;
+}
+.IDVerificationPage .signupButtons{
+    justify-content: flex-end;
+}
+.IDVerificationPage h4{
+    
 }
