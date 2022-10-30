@@ -40,3 +40,7 @@ ID VERIFICATION 1 AND 3
 
 ID VERIFICATION PAGE 5
     -next btn: navigate to home page
+    LESSER PRIORITY: change svg to an svg without dropshaddow
+SET-UP PROFILE:
+    -make add button newutral(no dropshaddow) on normal state then have drop shaddow on click and hover
+    -next btn: navigate to home page

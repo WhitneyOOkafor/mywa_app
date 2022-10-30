@@ -19,7 +19,7 @@ input[type="search"]::-webkit-search-decoration{
     box-shadow: none;
 }
 
-input:focus-visible, input::selection{
+input:focus-visible, input::selection, textarea:focus-visible, textarea::selection{
     border-radius: 0;
     outline: #0E1921;
 }
@@ -43,7 +43,7 @@ body{
 /*& UNIVERSAL STYLES*/
 .container{
     padding: 14.103vw 13.59vw 14.103vw 13.59vw;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     box-sizing: border-box;
 }
@@ -211,21 +211,32 @@ h6{
 label{
     font-family: 'Space-Grotesk-Bold' !important;
     padding-bottom: 2.56vw;/*10px*/
+    box-sizing: border-box;
+    width: fit-content;
 }
 .input{
     width: 71.795vw; /*280px*/
     height: 12.821vw; /*50px*/
     border: 0.513vw #0E1921 solid; /*2px*/
-    padding: 3.333vw 5.129; /*13px 20px*/
+    padding: 3.333vw 5.129vw; /*13px 20px*/
     text-align: center;
+    background-color: #fff;
 }
 .inputFieldContainer{
     display: flex;
     flex-direction: column;
     margin-bottom: 12.821vw; /*50px*/
+    width: 100%;
 }
 #loginForm{
     margin-bottom: 33.077vw; /*129px*/
+}
+.bold{
+    font-weight: 700;
+}
+textarea, .textarea{
+    background-color: #fff;
+    border: 0.513vw #0E1921 solid;/*2px*/
 }
 
 /*& BUTTONS*/
@@ -256,6 +267,13 @@ label{
     width: 7.44vw;/*29px*/
     height: 3.85vw;/*15*/
 }
+ input[type='radio'] {
+     transform: scale(1.5);
+    border: 0.513vw #0E1921 solid !important;/*2px*/
+    accent-color: #0E1921 !important;
+    background-color: #0E1921 !important;
+    border-color: #0E1921 !important;
+ }
 /*& SPLASHSCREEN*/
 
 #splashScreenLogo{
@@ -330,14 +348,12 @@ label{
 .link{
     color: #A51E24;
 }
-.heading h3{ 
+.heading h3, .heading h4{ 
     text-align: center;
     margin-bottom: 2.56vw;/*10px*/
 }
-.heading h4{ 
-    text-align: center;
-    margin-bottom: 2.56vw;/*10px*/
-}
+
+
 .heading{
     /* margin-top: 6.41vw;25px */
     margin-bottom: 5.1vw;/*20px*/
@@ -473,4 +489,138 @@ background-color: #fff;
 }
 .btn-3{
     border-radius: 100%;
+}
+
+.setup-profile{
+    background-color: #E3E0D7;
+}
+.setup-profile .container{
+    padding: 5.13vw;/*20px*/
+    justify-content: center;
+}
+
+/*& SET UP PROFILE*/
+.card{
+    background-color: #F0BC1B;
+    border: 0.513vw #0E1921 solid;/*2px*/
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.75);
+    padding: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-width: 89.74vw;
+    margin-bottom: 5.13vw;/*20px*/;
+}
+
+.card-1{
+    display: flex;
+    justify-content: center;
+        align-items: center;
+    flex-direction: column;
+    padding: 5.13vw;/*20px*/
+    width: fit-content;
+
+}
+.input-img{
+    border: 0.513vw #0E1921 solid;/*2px*/
+    height: 19.49vw;/*70px*/
+    width: 19.49vw;/*70px*/
+    background-color: #fff;
+
+}
+.input-img-gr{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.56vw;/*10*/;
+}
+.card-1 .input-img-gr div:nth-child(2){
+    margin-left: 6.67vw;/*26px*/
+    margin-right: 6.67vw;/*26px*/
+}
+.add-img-icon{
+    background-color: transparent !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.radio-btn-container{
+    width: 100%;
+}
+.setup-profile .inputFieldContainer{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    margin-bottom: 5.129vw;/*20*/
+}
+.setup-profile textarea, .setup-profile .textarea{
+    width: 71.79vw;/*280px*/
+    height: 38.46vw;/*150px*/
+    padding: 2.56vw;
+}
+.pill-btns-container{
+    height: 38.46vw;/*150px*/
+    width: 71.79vw;/*280px*/
+    background-color: #fff;
+    border: 0.513vw #0E1921 solid;/*2px*/
+    padding: 2.56vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pill-btn{
+    background-color: #F0BC1B;
+    border: 0.513vw #0E1921 solid;/*2px*/
+    height: 5.7vw;/*23*/
+    width: 14.10vw;/*55*/
+    border-radius: 5vw;
+    padding: 0.77vw 3.3vw; 
+    display: flex;
+    jus<div class="radio-btn">tify-self: center;
+    align-items: center;
+}
+.pill-btn-txt{
+    border-bottom: 0.513vw #0E1921 solid;/*2px*/
+    width: 100%;
+    padding: 1.28vw 2.56vw;/*5px 10px*/
+}
+.add-pill-btn{
+    position:absolute;
+    left: 74.36vw; /*290*/
+    bottom: 8.97vw; /*35px*/
+}
+.pill-btns-container input{
+    box-sizing: border-box;
+
+}
+.radio-btn .mid{
+        margin: 0 4.36vw !important;/*17*/
+}
+
+.radio-btn-container{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.radio-btn-container label{
+    font-weight: 200 !important;
+    padding: 0;
+}
+.radio-btn input{
+    margin-right: 1vw;
+}
+.selection-arrows{
+    position: absolute;
+    left: 76.92vw;/*290*/
+    display: flex;
+    flex-direction: column;
+}
+.selection-arrow-up {
+    margin-bottom: 2vw;
+}
+.setup-profile #next-btn{
+    margin-left: auto;
+    background-color: #fff;
 }
