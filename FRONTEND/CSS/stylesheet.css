@@ -785,6 +785,7 @@ main{
 }
 
 #notifications-overlay{
+    border: 0.513vw #0E1921 solid;/*2px*/
     background-color: #F0BC1B;
     box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.75);
     padding: 3.85vw;/*15px*/
@@ -794,7 +795,7 @@ main{
     height: fit-content;
     width: 76.92vw !important;/*300*/
     align-self: flex-end;
-    top:42.05vw;/*164*/
+    top:25.6vw;/*100*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -838,9 +839,6 @@ main{
     border-radius: 8.21vw;/*32px*/
     border: 0.513vw #0E1921 solid;
     box-sizing: border-box;
-    position: absolute;
-    z-index: 1;
-    bottom: 1.02vw;/*4px*/
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -859,6 +857,15 @@ main{
     justify-content: center;
 
     align-items: center;
+}
+.hide-menu{
+    position: absolute;
+        z-index: 1;
+        bottom: 1.02vw;
+        /*4px*/
+    height: fit-content;
+    width: fit-content;
+    display: none;
 }
 
 .search-bar{
