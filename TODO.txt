@@ -44,3 +44,9 @@ ID VERIFICATION PAGE 5
 SET-UP PROFILE:
     -make add button newutral(no dropshaddow) on normal state then have drop shaddow on click and hover
     -next btn: navigate to home page
+HOME-PAGE:
+    -tabs: add shaddow when clicked
+    -settings button: add functionality to show/hide, filters overlyay and notifications overlay
+    -hovering menu: on click menu must be displayed
+    -search icon: have input and search button pop up on click
+-OVERALL - Add alerts

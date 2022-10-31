@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MyWa App | Safely. Reliably. Together.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/stylesheet.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../JS/navigation.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+    </head>
+
+    <body class="home">
+        <div class="container">
+            <div class="top-nav-bar nav-bar">
+                <div class="top-nav-items">
+                    <div class="settings-btn btn">
+                        <img src="../ASSETS/settings.svg"/>
+                    </div>
+                    <div class="home-btn btn">
+                        <img class="logo logo-sm" src="../ASSETS/logo.svg"/>
+                    </div>
+                    <div class="notifications-btn btn">
+                        <img src="../ASSETS/bell.svg"/>
+                    </div>
+                </div>
+            </div>
+            <main>
+                <section id="notifications-overlay" class="overlays italics body-1">
+                    There are no notifications yet...
+                </section>
+                <div class="main-nav">
+                    <div class="tab totalCenter">
+                        <h6 class="uppercase">people</h6>
+                    </div>
+                    <div class="filters-btn">
+                        <img src="../ASSETS/filters.svg"/>
+                    </div>
+                    <div class="tab totalCenter">
+                        <h6 class="uppercase">Places</h6>
+                    </div>
+                </div>
+                <div class="swipe-cards-container totalCenter">
+                    <div class="swipe-card ">
+                        <div class="swipe-card-content">
+                            <h5 id="user-name">John Doe</h5>
+                            <div class="profile-image">
+                                <img />
+                            </div>
+                            <p class="profile-info body-1 bold"><span class="body-1 bold" id="age">24</span>yo &#x2022;<span class="body-1 bold"
+                                    id="starsign">Sagitarius &#x2022;</span><span class="body-1 bold" id="distance">10</span>Km away &#x2022;<span
+                                    class="body-1 bold" id="height">1'65</span></p>
+                            <div class="profile-image">
+                                <img />
+                            </div>
+                            <p class="profile-info body-1 bold"><span class="body-1 bold" id="work">Designer &#x2022;</span>Born in <span class="body-1 bold" id="hometown">Johannesburg</span> &#x2022; Currently living in <span class="body-1 bold" id="location">Johannesburg</span>
+                            </p>
+                            <div class="card">
+                                <p class="bold body-1">Biography</p>
+                                <p class="body-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                magna aliquam erat volutpat. Ut wisi enim ad minim veniam,</p>
+                            </div>
+                            <div class="profile-image">
+                                <img />
+                            </div>
+                            <p class="profile-info body-1 bold">
+                                <span class="body-1 bold"  id="religion">Liberal</span> &#x2022; <span class="body-1 bold" id="drinking">Drink socially</span> &#x2022; <span class="body-1 bold" id="smoke">Smoke socially</span> &#x2022; <span class="body-1 bold" id="education">Undergrad student</span>
+                            </p>
+                            <div class="card">
+                                <p class="bold body-1">Interests</p>
+                                <p class="body-1"><span class="interests body-1">Ipsum</span> &#x2022; <span class="interests body-1">Ipsum</span> &#x2022; <span class="interests body-1">Ipsum</span>&#x2022;</p>
+                            </div>
+                            <div class="profile-image">
+                                <img src=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div class="bottom-nav-bar nav-bar">
+                <div class="search-bar">
+                    <div class="search-bar-icon s-icons">
+                        <img src="../ASSETS/search-icon.svg"/>
+                    </div>
+                    <input type="text" class="input body-1"/>
+                    <div class="search-icon s-icons">
+                        <img src="../ASSETS/next-arrow.svg"/>
+                    </div>
+                </div>
+                <div class="bottom-nav-bar-menu">
+                    <div class="blank-circle totalCenter">
+                        <div class="menu-icons">
+                            <div class="menu-icon">
+                                <img src="../ASSETS/feed-icon.svg" />
+                            </div>
+                            <div class="menu-icon btn">
+                                <img src="../ASSETS/map-icon.svg" />
+                            </div>
+                            <div class="menu-icon btn">
+                                <img src="../ASSETS/messages-icon.svg" />
+                            </div>
+                            <div class="menu-icon btn">
+                                <img src="../ASSETS/explore-icon.svg" />
+                            </div>
+                            <div class="menu-icon btn">
+                                <img src="../ASSETS/contacts-icon.svg" />
+                            </div>
+                        </div>
+                        <div class="menu-btn btn totalCenter">
+                            <img src="../ASSETS/menu.svg"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--& OVERLAYS-->
+        <section id="settings-overlay" class="overlays">
+            <div class="settings-tabs">
+                <div class="input uppercase body-1 totalCenter">Edit profile</div>
+                <div class="input uppercase body-1 totalCenter">Privacy</div>
+                <div class="input uppercase body-1 totalCenter">Security</div>
+                <div class="input uppercase body-1 totalCenter">Log out</div>
+            </div>
+            <div onclick="" id="prev-btn" class="btn btn-2 login-btn btn-txt">
+                <img src="../ASSETS/prev-arrow.svg" />
+            </div>
+        </section>
+        <section id="filters-overlay" class="overlays">
+            <div class="exit-btn ">
+                <img src="../ASSETS/exit-icon.svg"/>
+            </div>
+            <h5>Filters</h5>
+
+            <div class="card">
+                <div class="inputFieldContainer">
+                    <label class="body-1">Age</label>
+                    <div class="range-values">
+                        <p class="body-2">18</p>
+                        <p class="body-2">99+</p>
+                    </div>
+                    <input class="input input-1 body-2 slider" id="age-range" type="range">
+                </div>
+                <div class="inputFieldContainer">
+                    <label class="body-1">Distance</label>
+                    <div class="range-values">
+                        <p class="body-2">1 Km</p>
+                        <p class="body-2">99 Km</p>
+                    </div>
+                    <input class="input input-1 body-2 slider" id="distance" type="range">
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
