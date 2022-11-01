@@ -20,21 +20,22 @@ let notification_overlay = "#notifications-overlay"
 let filters_btn = ".filters-btn";
 let filters_page = "#filters-overlay";
 let exit_btn = ".exit-btn";
-
+let search_bar_btn = ".search-bar-icon";
+let search_btn = ".search-icon";
+let search_input = ".search-input";
 //& navigate to login page
-
-//I am aware that I could have done all the navigation parts the one below, with less code and much simpler
-//but my brain refused to work, and since this project
-//was already late I decided to leave it as is
 function goTologin(){
-    window.location.href = '../signupLogin/index.html';
+    $("#prev-btn").click(function(){
+        window.location.href = '../signupLogin/index.html';
+    })
 }
 function  goToSignUp1(){
     window.location.href = '../signupLogin/signup-1.html';
 }
 function logout(){
-            window.location.href = '../signupLogin/index.html';
-
+    $(logout_btn).click(function(){
+        window.location.href = '../signupLogin/index.html';
+    })
 }
 
 function goToHome(){
@@ -209,7 +210,7 @@ function goToHome_after_setup(){
 //&home page
 function menu_btns_click(){
     $(menu_btns).click(function(){
-        alert("Oops! It seems we are having problems. Please come back later")
+        alert("Oops! It seems we are having problems. Please come back later");
     })
 }
 
@@ -247,7 +248,7 @@ function close_filters_page() {
         }
     )
 }
- 
 
-//&alert
-function alert_out_of_order()
+function not_clickable() { 
+    alert("Oops! It seems we are having problems. Please come back later");
+}

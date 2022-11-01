@@ -890,6 +890,7 @@ main{
     border: none;
     text-align: start;    
 }
+
 .search-bar .s-icons{
     border: 0.513vw #0E1921 solid;/*2px*/
     height: 10.26vw;/*40px*/
@@ -898,6 +899,7 @@ main{
         /*20px*/
     box-sizing: border-box;
 }
+
 .search-icon{
     display: flex;
     justify-content: center;

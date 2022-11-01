@@ -33,13 +33,13 @@
                 </section>
                 <div class="main-nav">
                     <div class="tab totalCenter">
-                        <h6 class="uppercase">people</h6>
+                        <h6 onclick="not_clickable()" class="uppercase">people</h6>
                     </div>
                     <div onclick="open_filters_page()" class="filters-btn">
                         <img src="../ASSETS/filters.svg"/>
                     </div>
                     <div class="tab totalCenter">
-                        <h6 class="uppercase">Places</h6>
+                        <h6 onclick="not_clickable()" class="uppercase">Places</h6>
                     </div>
                 </div>
                 <div class="swipe-cards-container totalCenter">
@@ -81,11 +81,11 @@
             </main>
             <div class="bottom-nav-bar nav-bar">
                 <div class="search-bar">
-                    <div class="search-bar-icon s-icons">
+                    <div onclick="toggle_search()" class="search-bar-icon s-icons">
                         <img src="../ASSETS/search-icon.svg"/>
                     </div>
-                    <input type="text" class="input body-1"/>
-                    <div class="search-icon s-icons">
+                    <input type="text" class="search-input input body-1"/>
+                    <div onclick="not_clickable()" class="search-icon s-icons">
                         <img src="../ASSETS/next-arrow.svg"/>
                     </div>
                 </div>
